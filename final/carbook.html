@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<head>
+      <title>Booking</title>
+	  <link rel="stylesheet" type="text/css" href="carbook.css"/>
+</head>
+
+<body>
+
+<div id="theform">
+      <div class="container">
+	     <img src="images/logo.jpg" alt="logo"/>
+         <h2>Welcome to Happy Holidays Car Rental Mauritius</h2>
+         <p>you are only steps away to enjoy the sceneries of mauritius .please fill in this form to book your car</p>     
+	 </div>
+	 
+	 <form action="car.php" method="GET">
+	 
+	 <fieldset>
+	 
+	 
+	     <label>Where</label><br><br>
+		 <label for="pickuppoint">PICK-UP-POINT</label>
+		 <select  name="pickuppoint" id="pickuppoint">
+		     <option value=""></option>
+             <option value="77">Albion</option>
+             <option value="50">Anse la Raie</option>
+             <option value="53">Baie du Tombeau</option>
+             <option value="78">Bain Boeuf</option>
+             <option value="52">Balaclava</option>
+             <option value="79">Beau Bassin</option>
+             <option value="71">Beau Champ (east coast)</option>
+             <option value="61">Bel Ombre</option>
+             <option value="60">Belle Mare</option>
+             <option value="4">Cap Malheureux</option> 
+             <option value="72">Chamarel</option>
+             <option value="119">Chemin Grenier</option>
+             <option value="83">Curepipe</option>
+             <option value="85">Ebène Cybercity</option>
+             <option value="5">Flic en Flac</option>
+             <option value="6">Grand Baie</option>
+             <option value="63">Grand Gaube</option>
+             <option value="67" selected="selected">International Airport SSR (MRU)</option>
+             <option value="64">La Preneuse</option>
+             <option value="65">Le Morne</option>
+             <option value="62">Mahébourg / Blue Bay</option>
+             <option value="10">Mont Choisy</option>
+             <option value="73">Old Grand Port</option>
+             <option value="11">Péreybère</option>
+             <option value="12">Pointe aux Canonniers</option>
+             <option value="51">Pointe aux Piments</option>
+             <option value="74">Pointe d&#039;Esny</option>
+             <option value="13">Port Louis</option>
+             <option value="121">Port Louis - cruise ship terminal</option>
+             <option value="70">Poste de Flacq</option>
+             <option value="76">Poste Lafayette</option>
+             <option value="81">Quatre Bornes</option>
+             <option value="120">Rivière du Rempart</option>
+             <option value="68">Rivière Noire</option>
+             <option value="75">Roches Noires</option>
+             <option value="80">Rose Hill</option>
+             <option value="84">Souillac</option>
+             <option value="14">Tamarin</option>
+             <option value="15">Trou aux Biches</option>
+             <option value="66">Trou d&#039;Eau Douce</option>
+             <option value="82">Vacoas</option>
+       </select>
+	 
+<br>
+	 
+	 
+<label for="dropoffpoint">DROP-OFF-POINT</label>
+		 <select  name="dropoffpoint" id="dropoffpoint">
+		     <option value=""></option>
+<option value="77">Albion</option>
+<option value="50">Anse la Raie</option>
+<option value="53">Baie du Tombeau</option>
+<option value="78">Bain Boeuf</option>
+<option value="52">Balaclava</option>
+<option value="79">Beau Bassin</option>
+<option value="71">Beau Champ (east coast)</option>
+<option value="61">Bel Ombre</option>
+<option value="60">Belle Mare</option>
+<option value="4">Cap Malheureux</option>
+<option value="72">Chamarel</option>
+<option value="119">Chemin Grenier</option>
+<option value="83">Curepipe</option>
+<option value="85">Ebène Cybercity</option>
+<option value="5">Flic en Flac</option>
+<option value="6">Grand Baie</option>
+<option value="63">Grand Gaube</option>
+<option value="67" selected="selected">International Airport SSR (MRU)</option>
+<option value="64">La Preneuse</option>
+<option value="65">Le Morne</option>
+<option value="62">Mahébourg / Blue Bay</option>
+<option value="10">Mont Choisy</option>
+<option value="73">Old Grand Port</option>
+<option value="11">Péreybère</option>
+<option value="12">Pointe aux Canonniers</option>
+<option value="51">Pointe aux Piments</option>
+<option value="74">Pointe d&#039;Esny</option>
+<option value="13">Port Louis</option>
+<option value="121">Port Louis - cruise ship terminal</option>
+<option value="70">Poste de Flacq</option>
+<option value="76">Poste Lafayette</option>
+<option value="81">Quatre Bornes</option>
+<option value="120">Rivière du Rempart</option>
+<option value="68">Rivière Noire</option>
+<option value="75">Roches Noires</option>
+<option value="80">Rose Hill</option>
+<option value="84">Souillac</option>
+<option value="14">Tamarin</option>
+<option value="15">Trou aux Biches</option>
+<option value="66">Trou d&#039;Eau Douce</option>
+<option value="82">Vacoas</option>
+</select>
+
+</fieldset>
+	 
+	 
+<fieldset>
+     <label>When</label><br>
+	<br>
+    <label for="pickuptime">pick-up-time</label>
+	<input type="date" name="pickupdate" id="pickupdate" placeholder="date dd/mm/yy"/>
+	<input type="time" name="pickuptime" id="pickuptime" placeholder="time 09:00"/>
+	<br>
+	
+
+	<label for="dropofftime">drop-off-time</label>
+	<input type="date" name="dropoffdate" id="dropoffdate" placeholder="date dd/mm/yy"/>
+	<input type="time" name="dropofftime" id="dropofftime" placeholder="time 09:00"/>
+</fieldset>
+	
+    <input class="button" type="submit" value="submit"/> 	
+</form>
+	 
+	 
+
+</div>
+
+
+
+</body>
+
+
+	 
+
+	 

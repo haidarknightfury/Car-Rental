@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<meta charset="utf-8"/>
+<head>
+      <title>About US</title>
+	  <link rel="stylesheet" type="text/css" href="about.css"/>
+	  <script>
+	     function display(){
+		    var input=document.createElement('TEXTAREA');
+			input.setAttribute('name','post');
+			input.setAttribute('maxlength',5000);
+			input.setAttribute('cols',105);
+			input.setAttribute('rows',10);
+			input.setAttribute('placeholder','enter your message');
+			var div=document.getElementById("new");
+			div.appendChild(input);
+			
+			
+		    var button=document.createElement('submit');
+			button.setAttribute('name','submit');
+			button.setAttribute('value','submit');
+			var div=document.getElementById("new1");
+			div.appendChild(button);
+			
+		 
+		 }
+	</script>
+
+</head>
+<body>
+ <header class="MainHeader">
+  
+   <img id="regimg" src="images/about_us.jpg" alt="imgregister"/>
+   
+		<div id="nav">
+		    <ul>
+			    <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="carbook.html"> Rent A Car Now</a>
+				    <ul>
+					  <li><a href="login.html">Log In</a></li>
+					  <li> <a href="regform.html">Register</a></li>
+					  <li><a href="carbook.html">Book Now</a></li>
+					  <li><a href="car.php">Our Cars</a></li>
+					</ul></li>
+                <li><a href="">FAQ</a></li>
+				<li><a href="SOAP/WScentric/Client">View All bookings</a></li>
+				<li><a href="discover.html">Discover Mauritius</a></li>
+				<li><a href="about.html">About Us</a></li>
+			</ul></li>
+		</div>
+</header>
+
+<div id="maincontent">
+<img src="images/logo.jpg" alt="logo"/>
+<p>Happy Holidays is a car rental company which is situated at  Labourdonnais street, Curepipe  , Mauritius.
+ Mr.  Cesar Sanchez founded it in June 2010 and started with 
+a fleet of 5 vehicles and  he now has about 40 vehicles which include scooters ,cars and vans.</p>
+
+<p>Happy Holidays Car Rental works with multiple subcontractors in Mauritius that have proven themselves as
+ trustworthy and reliable over the years. In case something does go wrong with your rental, though, 
+ we will help you from a neutral perspective. An advantage of us having multiple subcontractors is that we will 
+ forward your booking to the subcontractor that has the cheapest delivery fees to your hotel.
+ Therefore, please understand that delivery fees can be different for each car model and also depend on availability.</p>
+
+
+</div>
+
+
+
+<div id="side"><img src="images/url3.jpg" alt="image">
+
+</div>
+
+
+<form id="feedback" action="send.php" method="POST">
+<div id="new"></div>
+<div id="new1"></div>
+<p align="left">Leave us a message</p>
+<input type="button" value="leave message" onclick="display();"/>
+
+
+</form>
+
+
+
+
+
+
+<footer class="MainFooter">
+		<p>Copyright &copy; 2015</p><br>
+		<p>happy holidays homepage all rights reserved haidar dargaye</p>
+</footer>
+
+</body>
+
+</html>

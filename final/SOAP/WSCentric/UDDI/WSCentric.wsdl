@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**************************
+Purpose:	The WSDL file for the WSCentric web service
+Author: 	Shehzad Jaunbuccus
+Date:   	04/03/2014
+Version:	1.3
+ ***************************/
+-->
+<definitions targetNamespace="http://www.shehzad.edu/webservice" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+    xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+    xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:this="http://www.shehzad.edu/webservice" xmlns="http://schemas.xmlsoap.org/wsdl/"
+    xsi:schemaLocation="http://schemas.xmlsoap.org/wsdl/ http://schemas.xmlsoap.org/wsdl/wsdl.xsd http://www.w3.org/2001/XMLSchema http://www.w3.org/2001/XMLSchema.xsd">
+    <types>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.shehzad.edu/webservice"  elementFormDefault="qualified">
+            <xs:element name="Input" type="xs:string"/>
+                <xs:complexType name="BookingType">
+                <xs:sequence>
+                    <xs:element name="dropdate" type="xs:string"/>
+					<xs:element name="droptime" type="xs:string"/>
+					<xs:element name="dropplace" type="xs:string"/>
+                    <xs:element name="pickdate" type="xs:string"/>
+					<xs:element name="picktime" type="xs:string"/>
+					<xs:element name="pickplace" type="xs:string"/>
+                    <xs:element name="carid" type="xs:integer"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="ArrayOfBooking">
+                <xs:sequence>
+                    <xs:element name="Booking" minOccurs="0" maxOccurs="unbounded" type="this:BookingType"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="Result" type="this:ArrayOfBooking"/>
+        </xs:schema>
+    </types>
+    <!-- Input message -->
+    <message name="getBookingRequest">
+        <part name="input"  element="this:Input"/>
+    </message>
+    <!-- End Input message -->
+    <!-- Output message -->
+    <message name="getBookingResponse">
+        <part name="result" element="this:Result"/>
+    </message>
+    <!-- End Output message -->
+    <portType name="BookingPortType">
+        <operation name="viewBooking">
+            <input message="this:getBookingRequest"/>
+            <output message="this:getBookingResponse"/>
+        </operation>
+    </portType>
+    <binding name="BookingBinding" type="this:BookingPortType">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="viewBooking">
+            <soap:operation soapAction="http://www.shehzad.edu/webservice" />
+            <input><soap:body use="literal"/></input>
+            <output><soap:body use="literal"/></output>
+        </operation>
+    </binding>
+    <service name="BookingService">
+        <port name="BookingPort" binding="this:BookingBinding">
+            <soap:address location="http://localhost/final/SOAP/WSCentric/Server/Server.php"/>
+        </port>
+    </service>
+</definitions>

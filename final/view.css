@@ -1,0 +1,130 @@
+body{
+	   font-family: montserrat, arial, verdana;
+	   margin:0 auto;
+       width:70%;
+       clear:both;
+	   background-image: url('images/back.jpg');
+}
+
+
+#theform{
+margin-top:3%;
+float:left;
+margin-left:0;
+border: 5px solid white;
+border-radius:5px;
+padding:2px 3px;
+opacity:1.5;
+background: url('http://thecodeplayer.com/uploads/media/gs.png');
+background: linear-gradient(rgba(196, 102, 0, 0.2), rgba(155, 89, 182, 0.2)),  url('http://thecodeplayer.com/uploads/media/gs.png');
+opacity:0.95;
+width:80%;
+height:70%;
+
+}
+
+.container{
+
+background-color:#1F4680;
+}
+
+.container p{
+   text-align:center;
+   }
+   
+
+.container h2{
+   font-size:23px;
+   color:#fff;
+   }
+   
+   
+ .container img{
+     height:10%;
+	 width:10%;
+	 float:right;
+	 opacity:0.68;
+	 border-radius:5px;
+	
+}
+
+.container p{
+   font-size:14px;
+   color:#fff;
+   
+   }
+   
+label{
+    padding:5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 17px;
+	background-color:white;
+	font-weight:bold;
+
+
+  }
+input{
+    padding:5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 17px;
+	background-color:white;
+	font-weight:bold;
+
+  }  
+  
+  select{
+    padding:5px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 17px;
+	background-color:white;
+	font-weight:bold;
+  }
+   
+  fieldset{
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 10px 30px;
+	box-sizing: border-box;
+	margin:2%;
+
+	}
+	
+	 .button{ 
+  	width: 100px;
+	background: #33618E;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 5px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 0 250px;
+
+	}
+
+	
+	table td{
+	    width:200px;
+		}
+	table{
+	   margin:2%;
+	   }
+
+   

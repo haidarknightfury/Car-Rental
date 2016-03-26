@@ -1,0 +1,150 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<meta charset="utf-8"/>
+<head>
+      <title>Homepage</title>
+	  <link rel="stylesheet" type="text/css" href="mystyle.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+	
+	   <script type="text/javascript" src="javascript/slider.js"></script> 
+</head>
+
+<body class="body">
+<body onload="slider()">
+
+ <div class="slider">
+    <img id="1" src="images/1.JPG" border="0" alt="first image"/>
+	<img id="2" src="images/2.JPG" border="0" alt="second image"/>
+	<img id="3" src="images/3.JPG" border="0" alt="first image"/>
+</div>
+
+
+   <header class="MainHeader">
+		<div id="nav">
+		    <ul>
+			    <li><a class="active" href="index.html">Home</a></li>
+                <li><a href=""> Rent A Car Now</a>
+				    <ul>
+					  <li><a href="login.html">Log In</a></li>
+					  <li> <a href="regform.html">Register</a></li>
+					  <li><a href="#">Our Cars</a></li>
+					</ul></li>
+                <li><a href="">FAQ</a></li>
+				<li><a href="">Contact Us</a></li>
+				<li><a href="about.html">About Us</a></li>
+			</ul></li>
+		</div>
+	</header>
+  
+  
+     <div class="MainContent">
+	       <div class="content">
+		        <div class="topcontent">
+					 <h1 align="center"> Happy Holidays car rental</h1>
+					 
+					 <p> 
+
+                        Welcome to Happy Holidays website! The leader in car rental in Mauritius, Our Company is present in Mauritius since 2000.
+						Our wide range of vehicles available for rental will enable you to drive around Mauritius in all freedom! We offer you value for money.
+                     </p>
+					      
+					     <img src="images/car1.JPG" alt="carpic"/> 
+						 
+						 <div id="text">
+						    <p> Book and tell us where you wish your hired car to be waiting for you at the airport, your hotel or bungalow in Mauritius.
+							.Our aim is to supply an economical, safe, clean and reliable car rental in Mauritius to you our dear valued customer. 
+							
+							</p>
+						
+							
+						 </div>
+					
+					
+					 
+				</div>
+				
+				<div class="bottomcontent">
+                    <div class="view view-first">  
+                      <img src="images/2.jpg" alt="image"/>  
+                      <div class="mask">  
+                           <h2>Discover More</h2>  
+                           <p>Mauritius, is a 2040 square-kilometre island full of surprises, which are just waiting to be discovered. 
+						  Each region of the island offers a unique perspective for all travelers.</p>  
+                           <a href="#" class="info">Read More</a>  
+                      </div>  
+                    </div>  					  
+				</div>
+				
+
+			</div>
+				
+				
+				<aside class="top">
+				   <h1> Unique Advantages</h1>
+				   <?php session_start(); 
+                      include_once("global.php");
+					  $user_id=$_SESSION['id'];
+					   $query=mysql_query("SELECT *FROM members WHERE id='$user_id'") or die("could not select data");
+					   $row = mysql_fetch_assoc($query);
+                       $name =$row['username'];
+					  
+				   ?>
+				   
+				   
+				   
+				      <div id="profile">
+                      <b id="welcome">Welcome : <i><?php echo $name; ?></i></b>
+                      <b id="logout"><a href="logout.php">Log Out</a></b>
+                    </div>
+					
+
+					
+				</aside>
+
+				
+		         <aside class="top">
+				   <h1> Unique Advantages</h1>
+				   
+				   <ul>
+				      <li><span><b>No Deposit</b></span> required</li>
+					  <li><span><b>Assisstance 24/24 </b></span></li>
+				      <li><span><b>Full risk insurance</b></span></li>
+					  <li><span><b>Unlimited mileage</b></span></li>
+					  <li><span><b>Driver Option</b></span></li>
+					  <li><span><b>Airport Delivery and collection</b></span></li>
+					  <li>Delivery and collection<span><b> everywhere across the island<b></li>
+					  <li><span><b>Baby seat and boosters free</b></span></li>
+					 </ul>
+					  
+					  
+				</aside>
+				
+				
+                 <aside class="middle">
+				      <h1>Discover Mauritius</h1>
+					  <p>
+                          Mauritius, is a 2040 square-kilometre island full of surprises, which are just waiting to be discovered. 
+						
+					  </p>
+					  
+				  </aside>
+				  
+			      <aside class="bottom">
+				      <h1> Bottom</h1>
+				  </aside>
+     </div>
+	 
+	 
+<footer class="MainFooter">
+		<p>Copyright &copy; 2015</p>
+		<p>happy holidays homepage all rights reserved haidar dargaye</p>
+</footer>
+
+	 
+</body>
+
+
+
+</html>

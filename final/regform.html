@@ -1,0 +1,110 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<meta charset="utf-8"/>
+<head>
+      <title>Registration form</title>
+	  <link rel="stylesheet" type="text/css" href="formstyle.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+	
+	   <script type="text/javascript" src="javascript/form.js"></script> 
+</head>
+
+<body onload="show()">
+
+<!--header-->
+
+   <header class="MainHeader">
+  
+   <img id="regimg" src="images/reg.png" alt="imgregister"/>
+   
+		<div id="nav">
+		    <ul>
+			     <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="carbook.html"> Rent A Car Now</a>
+				    <ul>
+					  <li><a href="login.html">Log In</a></li>
+					  <li> <a href="regform.html">Register</a></li>
+					  <li><a href="carbook.html">Book Now</a></li>
+					  <li><a href="car.php">Our Cars</a></li>
+					</ul></li>
+                <li><a href="">FAQ</a></li>
+				<li><a href="SOAP/WScentric/Client">View All bookings</a></li>
+				<li><a href="discover.html">Discover Mauritius</a></li>
+				<li><a href="about.html">About Us</a></li>
+			</ul></li>
+		</div>
+	</header>
+
+<!-- header ends -->
+
+
+<div id="theform">
+
+<form id="msform" action="register.php" method="POST">
+	<!-- progressbar -->
+	<ul id="progressbar">
+		<li class="active">Account Setup</li>
+		<li>Personal Details</li>
+		<li>Contact Details</li>
+	</ul>
+	<!-- fieldsets -->
+	<div id="container">
+	<fieldset id="1">
+		<h2 class="fs-title">Create your account</h2>
+		<h3 class="fs-subtitle">Enter your username email and password</h3>
+		<input type="text" name="username" id="username" onblur="validate('username', this.value)" placeholder="Username" />
+		
+		<input type="password" name="pass" id="pass" onblur="validate('password', this.value)" placeholder="Password" />
+		<input type="password" name="cpass" id="cpass" placeholder="Confirm Password" />
+		<div id="message" class="message"></div>
+		<input type="button" name="next" class="next action-button" value="Next" onclick="return validateone();" />
+	</fieldset>
+	<fieldset id="2">
+		<h2 class="fs-title">Personal Details</h2>
+		<h3 class="fs-subtitle">Your personal details</h3>
+		<input type="text" name="fname" id="fname"placeholder="First Name" />
+		<input type="text" name="lname" id="lname" placeholder="Last Name" />
+		<input type="date" id="dob" name="dob" placeholder="Date Of Birth"/>
+		<textarea name="address" id="address" placeholder="Address"></textarea>
+		<input type="text" id="country" id="country" name="country" placeholder="Country"/>
+	    <div id="messageone" class="message"></div>
+		<input type="button" name="previous" class="previous action-button" value="Previous" onclick="showprevone()" />
+		<input type="button" name="next" class="next action-button" value="Next"onclick="return validatetwo()" />
+		
+	</fieldset>
+	<fieldset id="3">
+		<h2 class="fs-title">Contact Details</h2>
+		<h3 class="fs-subtitle">Your Contact Details</h3>
+		<input type="text" name="phone" id="phone" placeholder="Phone Number" />
+		<input type="text" name="phone2" id="phone2" placeholder="Additional Phone Number" />
+		<input type="text" name="email" id="email"placeholder="Email Address" />
+		<input type="checkbox" id="chkagree" name="chkagree"/>
+		<label for="chkagree">I agree to terms and conditions</label>
+		<div id="messagethree" class="message"></div>
+		<br>
+		<input type="button" name="previous" class="previous action-button" value="Previous" onclick="showprevtwo()"/>
+		<input type="submit" name="submit" class="submit action-button" value="register" onclick="return validatethree()" />
+	</fieldset>
+  </div>
+  </form>
+</div>
+
+<div id="side">
+<img src="images/logo.jpg" alt="logo"/>
+<p align="center"><span  style="color:blue;font-size:40px;" >D</span>o you appreciate a professional service, transparent pricing and modern cars but are still reluctant to pay a fortune
+ for a rental from other international companies like Europcar, Sixt, and Avis? Then you should definitely rent a car with us.
+ All our prices include fully comprehensive insurance, taxes and delivery costs.</p><br>
+ 
+ <p> Register with us now and you can enjoy your happy holidays</p>
+
+</div>
+	 
+<footer class="MainFooter">
+		<p>Copyright &copy; 2015</p><br>
+		<p>happy holidays homepage all rights reserved haidar dargaye</p>
+</footer>
+
+</body>
+</html>

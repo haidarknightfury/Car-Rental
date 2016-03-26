@@ -1,0 +1,71 @@
+table td{
+ padding:50px;
+}
+
+
+table {
+   border:1px solid black;
+   margin:5%;
+   background:#FFFFD1;
+   
+   }
+   
+ .desc{
+   border:1px solid black;
+   margin:0 auto;
+   padding:0px;
+ 
+ }
+   
+body{
+	   font-family: montserrat, arial, verdana;
+	   margin:0 auto;
+       width:70%;
+       clear:both;
+	   background-image: url('images/back.jpg');
+}
+
+ .button{ 
+  	width: 100px;
+	background: #33618E;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+	}
+a{
+
+  	width: 100px;
+	background: #33618E;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+
+
+}
+	
+	
+.theform{
+margin-top:3%;
+float:left;
+margin-left:0;
+border: 5px solid white;
+border-radius:5px;
+padding:2px 3px;
+opacity:1.5;
+background: url('http://thecodeplayer.com/uploads/media/gs.png');
+background: linear-gradient(rgba(196, 102, 0, 0.2), rgba(155, 89, 182, 0.2)),  url('http://thecodeplayer.com/uploads/media/gs.png');
+opacity:0.95;
+width:90%;
+
+
+}
+
+

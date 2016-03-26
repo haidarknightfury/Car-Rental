@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<head>
+      <title>Discover Mauritius</title>
+	  <link rel="stylesheet" type="text/css" href="discover.css"/>
+	<style>
+         #map-canvas {
+         width: 100%;
+         height: 400px;
+         background-color: #CCC;
+		 float:left;
+		 border-radius:5px;
+  }
+</style>
+
+ <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map-canvas');
+        var mapOptions = {
+          center: new google.maps.LatLng(-20.1625, 58.2903),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+	
+</head>
+
+<body class="body">
+
+<div>
+<div class="entity">
+ <div class="view view-first">  
+    <img src="images/lion.jpg" alt="image"/>
+	<div class="mask"> 
+	<h2>Walking with Lions Adventure </h2>  
+    <p>The walking with lions is an adventurous activity proposed to those who wish to experience the wild side. Don't miss this unique 
+	opportunity which will be the highlight of your holiday in Mauritius! 
+	This activity takes place on the banks of Riviere du Rempart in a separate area of the Safari park.</p>  
+    <a href="http://mauritiusattractions.com/walking-with-lions-p-90.html" class="info">Read More</a>  
+    </div>  
+  </div>  					  
+</div>
+
+<div class="entity">
+ <div class="view view-first">  
+    <img src="images/dolphin.jpg" alt="image"/>
+	<div class="mask"> 
+	<h2>Swim With Dolphins</h2>  
+    <p>Explore the spectacular lives of these magnificent marine mammals in their natural aquatic habitat. 
+	Immerse yourself in the adventure of a lifetime and swim with dolphins in crystal clear waters.Swimming with dolphins 
+	is an incredibly moving experience which will bring you into contact with strikingly beautiful scenery,
+	unspoiled landscapes and wonderful animals
+	</p>  
+    <a href="http://mauritiusattractions.com/swim-with-dolphins-hours-p-73.html" class="info">Read More</a>  
+    </div>  
+  </div>  					  
+</div>
+
+
+<div class="entity">
+ <div class="view view-first">  
+    <img src="images/parks.jpg" alt="image"/>
+	<div class="mask"> 
+	<h2>Mauritius Attractions - Parks, Reserves and Sites</h2>  
+    <p>Nature Parks, Wildlife sanctuaries, Museums, Gardens, Aquariums and many more… Mauritius is spoilt with long list of great places to visit.
+So no matter what your preference is; if you are searching to unveil the culture of the island, discover the local history or see the
+ amazing wildlife of Mauritius.
+The wide diversity of landscapes will never cease to amaze you and few of the best places to visit are the Safari and Bird Park,
+ Vallée des Couleurs, Crocodile & Giant
+ Tortoises Park and Ile Aux Aigrettes Island.</p>  
+    <a href="http://mauritiusattractions.com/mauritius-attractions-c-24.html" class="info">Read More</a>  
+    </div>  
+  </div>  					  
+</div>
+
+<div class="entity">
+ <div class="view view-first">  
+    <img src="images/sea.jpg" alt="image"/>
+	<div class="mask"> 
+	<h2>Visit of Mauritius Aquarium</h2>  
+    <p>The aquarium, located in a small relaxing village in the North West of Mauritius, is home to a large number
+	of species including over 200 species of fish,
+	invertebrates, live coral and sponges, originating from the waters around the island.</p>  
+    <a href="http://mauritiusattractions.com/mauritius-aquarium-p-64.html" class="info">Read More</a>  
+    </div>  
+  </div>  					  
+</div>
+</div>
+
+
+
+<div id="map-canvas">
+</div>
+
+
+
+<footer class="MainFooter">
+		<p>Copyright &copy; 2015</p>
+		<p>happy holidays homepage all rights reserved haidar dargaye</p>
+</footer>
+</body>
+
+
+	 
+
+
+
+</html>
